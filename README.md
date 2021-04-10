@@ -2,7 +2,7 @@
 <img src=""/>  
 
 Procart app is decentralized system for customers who wants to buy some products such as Phones, Clothes, Groceries from local store with beneficial of using Ethereum technology.Due to which both consumer and seller get advantages of Ethereum payment portal hence it run without any downtime, fraud, control or interference from a third party.
-The consumer can also easily locates the nearest local store according to present location.
+The consumer can also easily locates the nearest local stores with there products and services according to present location and can proceed to online transaction through Ethereum.
 
 
 <h3>Why to Use Ethereum</h3>
@@ -22,6 +22,8 @@ One of the biggest fears in financial transactions are scams or counterfeit mone
 <h5>It’s cheaper</h5>
 In the case of Ethereum, its use is cheaper due to the absence of third parties, this makes it a much more profitable payment option compared to other currencies or traditional means of payment, especially when used to make purchases over the Internet or even when It is decided to make payments in physical stores or commercial premises.
 The app also gives facility to search nearby hospitals and hotels and other safe places thus also allow user to know his/her current location.
+
+
 
 
 
