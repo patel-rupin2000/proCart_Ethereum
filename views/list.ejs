@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="a.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style media="screen">
+            body{
+                background:linear-gradient(-45deg, #000000, #2e2e2e,  #000000,#404040);
+	            background-size: 400% 400%;
+	            animation: gradient 15s ease infinite;
+                }
+            
+
+            @keyframes gradient {
+	        0% {
+		    background-position: 0% 50%;
+	        }
+	        50% {
+		    background-position: 100% 50%;
+	        }
+	        100% {
+		    background-position: 0% 50%;
+	        }
+            }
+            #nav{
+                background-color: black;
+            }
+            #home{
+                font-family: 'Montserrat', sans-serif;
+                transition: all .2s;
+            }
+            #home:hover{
+                color: #00FF99;
+                transition: all .2s;
+            }
+            #txt{
+                padding-top: 2rem;
+                font-size: 2rem;
+                font-family: 'Poppins', sans-serif;
+                color: white;
+                outline: none;
+            }
+            hr{
+                padding-top: 0;
+                border-top: 3px solid #00FF99;
+                width: 25%;
+                margin-left: 0;
+            }
+            #card-cont{
+                padding: 20px 0;
+            }
+            #card{
+                background-color: #282424;
+                border-radius: 20px;
+
+            }
+            #header{
+                color: white;
+            }
+
+            #card-body{
+                color: white;
+                background-color: transparent;
+            }
+            #card-body a{
+                font-size: 20px;
+                margin-right: 0;
+                margin-left: 60rem;
+                background-color: #00FF99;
+                color: white;
+                border-radius: 20px;
+            }
+            #card-body a:hover{
+                background-color: #00FF99;
+                transition: all ease .2s;
+            }
+            #price{
+                font-weight: bolder;
+            }
+            #price span{
+                color: #00FF99;
+            }
+            .btn{
+                font-family: 'Montserrat', sans-serif;
+                color: black !important;
+                font-weight: bold;
+            }
+            p.ex2 {display: inline;
+            color: #00FF99;
+            }
+
+ 
+            #details{
+                color: white;
+            }
+          
+
+        </style>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom" id="nav" style="background-color: transparent;">
+            <div class="container">
+                <img src="./assets/logo.png" id="logo" width="160" height="60" alt="">
+                  <ul class=" container d-flex justify-content-lg-end navbar-nav mr-auto ">
+                    <li class="nav-item active mx-2 h4">
+                      <a class="nav-link"  id="home" href="landing.ejs">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h2 id="txt">Products Available</h2>
+            <hr>
+        </div>
+
+        <div class="rides" style="width: 70%;align-self: center;margin:auto;">
+            
+            <div class="card" style="flex-direction: row;background-color:  transparent;border-color: white; border-radius: 25px;">
+                <img   style="border-radius: 25px; align-self: start;" src="./assets/laptop_product.jpeg" id="logo" width="210" height="180" alt="">
+                
+                
+                <div style="padding: 1%;">
+                    <h5 id="pro_title_1" style="color: white;">Acer Aspire 5</h5>
+                    <div id="details_1" style="color: white;">                 
+                  <p >(8GB RAM, intel core i5, 512 GB SSD)<br>Free Home Delivery<br>2 Years Warrenty</p>
+                  
+                </div>
+                  <div class="row">
+                    <div class="col-sm">
+                    <h6 id="price_1" style="color: white;">Price:
+                        <p class="ex2">Rs. 75000</p>
+                         
+                        </h6></div>
+                        <div class="col-sm" >
+                        <a href="bill.ejs" id="order" onclick="product_1()" style="padding-left: 480%;"><div class="btn btn-primary" style="background-color: #00FF99;border-color: #00FF99; "  >Order Now</div></a>
+                    </div>
+                </div>
+
+                  
+                  
+                  
+                </div>
+              
+            </div>
+              <br>
+              <div class="card" style="flex-direction: row;background-color:  transparent;border-color: white; border-radius: 25px">
+                <img   style="border-radius: 25px; align-self: start;" src="./assets/phone.jpeg" id="logo" width="210" height="180" alt="">
+                
+                
+                <div style="padding: 1%;">
+                    <h5 id="pro_title_2" style="color: white;">OnePlus 9 Pro</h5>
+                    <div id="details_2" style="color: white;" >                 
+                  <p >(8GB RAM, OctaCore Processor, 64 GB) <br>Free Home Delivery<br>2 Years Warrenty</p></p>
+                  
+                </div>
+                  <div class="row">
+                    <div class="col-sm">
+                    <h6 id="price_2" style="color: white;">Price:
+                        <p class="ex2">Rs. 20000</p>
+                         
+                        </h6></div>
+                        <div class="col-sm">
+                        <a href="bill.ejs" id="order" onclick="product_2()" style="padding-left: 445%;"><div class="btn btn-primary" style="background-color: #00FF99;border-color: #00FF99; "  >Order Now</div></a>
+                    </div>
+                </div>
+
+                  
+                  
+                  
+                </div>
+              </div>
+              <br>
+              <div class="card" style="flex-direction: row;background-color: transparent;border-color: white; border-radius: 25px">
+                <img   style="border-radius: 25px; align-self: start;" src="./assets/tab.jpeg" id="logo" width="210" height="180" alt="">
+                
+                
+                <div style="padding: 1%;">
+                    <h5 id="pro_title_3" style="color: white;">Samsung Galaxy S+</h5>
+                    <div id="details_3" style="color: white;">                 
+                  <p >(8GB RAM, intel core i3, 226 GB SSD) <br>Free Home Delivery<br>2 Years Warrenty</p></p>
+      
+                </div>
+                  
+                <div class="row">
+                    <div class="col-sm">
+                    <h6 id="price_3" style="color: white;">Price:
+                        <p class="ex2">Rs. 25000</p>
+                         
+                        </h6></div>
+                        <div class="col-sm">
+                        <a href="bill.ejs" id="order" onclick="product_3()" style="padding-left: 480%;"><div class="btn btn-primary" style="background-color: #00FF99;border-color: #00FF99; "  >Order Now</div></a>
+                    </div>
+                </div>
+                    
+
+                  
+                  
+                  
+                </div>
+              </div>
+            
+              
+            
+        </div>
+        </body>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
