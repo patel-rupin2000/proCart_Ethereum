@@ -1,5 +1,5 @@
 <h1>ProCart</h1>
-<img src=""/>  
+<img src="./views/assests/logo.png"/>  
 
 Procart app is decentralized system for customers who wants to buy some products such as Phones, Clothes, Groceries from local store with beneficial of using Ethereum technology.Due to which both consumer and seller get advantages of Ethereum payment portal hence it run without any downtime, fraud, control or interference from a third party.
 The consumer can also easily locates the nearest local stores with there products and services according to present location and can proceed to online transaction through Ethereum.
