@@ -23,7 +23,24 @@ One of the biggest fears in financial transactions are scams or counterfeit mone
 In the case of Ethereum, its use is cheaper due to the absence of third parties, this makes it a much more profitable payment option compared to other currencies or traditional means of payment, especially when used to make purchases over the Internet or even when It is decided to make payments in physical stores or commercial premises.
 The app also gives facility to search nearby hospitals and hotels and other safe places thus also allow user to know his/her current location.
 
+#Step to be followed to execute project
+->Download or clone repository
+->Open folder in command prompt
+     cd <open location path>
+ ->run npm install
+ ->launch localhost:3000
+ ->launch landing.ejs 
+ 
+ #step to connect Ethereum
+-> add chrome extension Metamask
+-> create ethereum wallet account
 
+#steps to connect Ganache
+-> install Ganache application 
+-> create a workspace 
+-> connect Ganache server with project localhost
+
+ 
 
 
 
