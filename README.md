@@ -23,7 +23,7 @@ One of the biggest fears in financial transactions are scams or counterfeit mone
 In the case of Ethereum, its use is cheaper due to the absence of third parties, this makes it a much more profitable payment option compared to other currencies or traditional means of payment, especially when used to make purchases over the Internet or even when It is decided to make payments in physical stores or commercial premises.
 The app also gives facility to search nearby hospitals and hotels and other safe places thus also allow user to know his/her current location.
 
-
+<h2>How to run</h2>
 
 
 #Step to be followed to execute project
