@@ -129,11 +129,24 @@
             <hr>
         </div>
 
+      
+            
+            <!-- <div class="swiper-slide" data-toggle="modal" data-target="#iotix" style="background-image:url('./event-posters/iotix.jpg') !important;background-repeat: no-repeat;background-size: contain;"></div>
+            <div class="swiper-slide" data-toggle="modal" data-target="#photonix"  style="background-image:url('./event-posters/photonix.jpg') !important;background-repeat: no-repeat;background-size: contain;"></div>
+            <div class="swiper-slide" data-toggle="modal" data-target="#comingsoon"  style="background-image:url('./events/c3.png') !important;background-repeat: no-repeat;background-size: contain;"></div> -->
+            <div class="swiper-slide" data-toggle="modal" data-target="#webdev" >Hi<div>
+
+
+            </div>
+      
         <div class="rides" style="width: 70%;align-self: center;margin:auto;">
             
+
+            <form class="form-label-group" method="POST" action="/first">
             <div class="card" style="flex-direction: row;background-color:  transparent;border-color: white; border-radius: 25px;">
+                <div  id="image_1">
                 <img   style="border-radius: 25px; align-self: start;" src="./assets/laptop_product.jpeg" id="logo" width="210" height="180" alt="">
-                
+            </div>
                 
                 <div style="padding: 1%;">
                     <h5 id="pro_title_1" style="color: white;">Acer Aspire 5</h5>
@@ -148,20 +161,21 @@
                          
                         </h6></div>
                         <div class="col-sm" >
-                        <a href="bill.ejs" id="order" onclick="product_1()" style="padding-left: 480%;"><div class="btn btn-primary" style="background-color: #00FF99;border-color: #00FF99; "  >Order Now</div></a>
+                            <div class="swiper-slide" data-toggle="modal" data-target="#webdev" >
+                                <a href="#" id="order" onclick="product_1()" style="padding-left: 445%;"><div class="btn btn-primary" style="background-color: #00FF99;border-color: #00FF99; "  >Order Now</div></a></div>
                     </div>
                 </div>
 
-                  
-                  
-                  
+                    
                 </div>
+            </form>
               
             </div>
               <br>
               <div class="card" style="flex-direction: row;background-color:  transparent;border-color: white; border-radius: 25px">
+                <div  id="image_2">
                 <img   style="border-radius: 25px; align-self: start;" src="./assets/phone.jpeg" id="logo" width="210" height="180" alt="">
-                
+            </div>
                 
                 <div style="padding: 1%;">
                     <h5 id="pro_title_2" style="color: white;">OnePlus 9 Pro</h5>
@@ -176,7 +190,8 @@
                          
                         </h6></div>
                         <div class="col-sm">
-                        <a href="bill.ejs" id="order" onclick="product_2()" style="padding-left: 445%;"><div class="btn btn-primary" style="background-color: #00FF99;border-color: #00FF99; "  >Order Now</div></a>
+                            <div class="swiper-slide" data-toggle="modal" data-target="#webdev" >
+                                <a href="#" id="order" onclick="product_2()" style="padding-left: 410%;"><div class="btn btn-primary" style="background-color: #00FF99;border-color: #00FF99; "  >Order Now</div></a></div>
                     </div>
                 </div>
 
@@ -187,8 +202,9 @@
               </div>
               <br>
               <div class="card" style="flex-direction: row;background-color: transparent;border-color: white; border-radius: 25px">
+                <div  id="image_3">
                 <img   style="border-radius: 25px; align-self: start;" src="./assets/tab.jpeg" id="logo" width="210" height="180" alt="">
-                
+                </div>
                 
                 <div style="padding: 1%;">
                     <h5 id="pro_title_3" style="color: white;">Samsung Galaxy S+</h5>
@@ -204,12 +220,13 @@
                          
                         </h6></div>
                         <div class="col-sm">
-                        <a href="bill.ejs" id="order" onclick="product_3()" style="padding-left: 480%;"><div class="btn btn-primary" style="background-color: #00FF99;border-color: #00FF99; "  >Order Now</div></a>
+                            <div class="swiper-slide" data-toggle="modal" data-target="#webdev" >
+                                <a href="#" id="order" onclick="product_3()" style="padding-left: 445%;"><div class="btn btn-primary" style="background-color: #00FF99;border-color: #00FF99; "  >Order Now</div></a></div>
                     </div>
                 </div>
                     
 
-                  
+                
                   
                   
                 </div>
@@ -218,6 +235,83 @@
               
             
         </div>
+
+
+
+        <div class="modal fade" id="webdev" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" id="b_b">
+                        <h5 class="modal-title text-white" id="exampleModalLongTitle" style="text-align: center;">WebDev</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="./times-solid.png" style="height:10px;"></img>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-4 offset-sm-1" id="c_c">
+                                
+                            </div>
+                            <div class="col-sm-6 offset-sm-1" id="a_a" >
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer align-items:center">
+                        
+                            0x81b7E08F65Bdf5648606c89998A9CC8164397647     <button type="submit" onclick="sendmail();"  value="Send Message"  class="btn btn-primary mr-auto ml-auto">Get</button>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+<script>  
+
+     function sendmail(){
+    
+			
+
+			// var body = $('#body').val();
+
+			// var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
+			//console.log(name, phone, email, message);
+
+			Email.send({
+        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+				To: 'shresth.nicks@gmail.com',
+				From: "demooptimalweb@gmail.com",
+				Subject: "New message on contact for purchase",
+				Body: "You bought a Acer Aspire 5, Price:75000"
+			}).then(
+				message =>{
+					//console.log (message);
+					if(message=='OK'){
+					alert('Your mail has been send. Thank you for connecting.');
+					}
+					else{
+						console.error (message);
+						alert('There is error at sending message. ')
+						
+					}
+
+				}
+			);
+
+
+
+		}
+
+
+    </script>
+ </script>
+
         </body>
 
 
