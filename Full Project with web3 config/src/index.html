@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style media="screen">
+
+body{
+    background:linear-gradient(-45deg, #000000, #2e2e2e,  #000000,#404040);
+	            background-size: 400% 400%;
+	            animation: gradient 15s ease infinite;
+                }
+            
+
+            @keyframes gradient {
+	        0% {
+		    background-position: 0% 50%;
+	        }
+	        50% {
+		    background-position: 100% 50%;
+	        }
+	        100% {
+		    background-position: 0% 50%;
+	        }
+            }
+
+            .container{
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            #nav{
+                background-color: transparent;
+            }
+
+            #book{
+                font-family: 'Montserrat', sans-serif;
+                transition: all .2s;
+            }
+            #book:hover{
+                color: #00FF99;
+                transition: all .2s;
+            }
+            #drive{
+                font-family: 'Montserrat', sans-serif;
+                color:#00FF99 ;
+                transition: all .2s;
+            }
+            #drive:hover{
+                color:#00FF99;
+                transition: all .2s;
+            }
+
+            button:focus{
+                outline:none;
+            }
+            #logo{
+                display: block;
+                max-width: 100%;
+                height: auto;
+                padding-bottom: 10px;
+            }
+            #txt{
+                font-size: 5rem;
+                padding-bottom: 30px;
+                padding-top: 30px;
+                font-family: 'Poppins', sans-serif;
+                color: white;
+            }
+            #txt2{
+                color: #00FF99;
+                font-weight: 250;
+                font-size: 1.5rem;
+                font-family: 'Montserrat', sans-serif;
+                padding-bottom: 3rem;
+            }
+            #first{
+                height: 90vh !important;
+                padding-top: 2rem;
+            }
+            #hr1{
+                padding-top: 0;
+                border-top: 3px solid #00FF99;
+                width: 50%;
+                margin-right: 0;
+
+            }
+            #img2{
+                padding-top: 2rem;
+                margin-top: 2rem;
+            }
+            #txt3{
+                font-size: 4rem;
+                padding: 30px 0;
+                font-family: 'Poppins', sans-serif;
+                color: white;
+                padding-bottom: 5px;
+            }
+            #txt4{
+                font-size: 1.4rem;
+                text-align: right;
+                color: white;
+            }
+            #hr2{
+                width: 20%;
+                text-align: center;
+                border-top: 3px solid #00FF99;
+            }
+            #txt5{
+                padding-top: 6rem;
+                color: white;
+            }
+            #txt6{
+                font-size:2.2rem ;
+                padding-top: 20px;
+                margin-right: 5rem;
+                color: white;
+            }
+            #txt7{
+                margin-right: 5rem;
+                font-size: 1.1rem;
+                color: #00FF99;
+                font-family: 'Montserrat', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom" id="nav">
+            <div class="container">
+                <img src="./assets/logo.png" id="logo" width="160" height="60" alt="">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class=" container d-flex justify-content-lg-end navbar-nav mr-auto ">
+                    <li class="nav-item active mx-2 h4">
+                      <a class="nav-link"  id="book" href="book.html">SignUp <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link h4" id="drive" href="">Login</a>
+                      </li>
+                      <li class="nav-item mx-2">
+                        <a class="nav-link h4" id="drive" href="https://colab.research.google.com/drive/13yV-0IY1_PJwQBUwal6Zqp0dlxBh1z_3?usp=sharing"><img src="./assets/chat.png" alt="" height="40" width="40"></a>
+                      </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+        <hr>
+        <div class="container d-flex justify-content-center h-100" id="first">
+            <div class="container pt-5">
+                <h1 id="txt" style="font-weight: bold;">Get the World's <br>best services</h1>
+                <h2 id="txt2">Get world's first ever Product service <br> based on Ethereum Technology</h2>
+            </div>
+            <div class="conatiner pt-5">
+                <img src="./assets/Landing page 1st  image.png" width="560" height="420" alt="">
+            </div>
+            
+        </div>
+        <div class="container d-flex justify-content-center">
+
+            <div class="container pt-5 ">
+                <img src="./assets/landing page 2nd image.png" width="680" height="480" id="img2"alt="">
+            </div>
+            <div class="container pt-5">
+                <h1 class="text-right" id="txt3">About Us</h1>
+                <hr id="hr1" >
+                <p id="txt4">Procart app is decentralized system for 
+                    customers who wants to buy some products such as
+                    Phones, Clothes, Groceries from local store with 
+                      beneficial of using Ethereum technology.Due to 
+                    which both consumer and seller get advantages of 
+                    Ethereum payment portal hence it run without any 
+                     downtime, fraud, control or interference from a
+                      third party.
+                </p>
+            </div>
+            
+            
+        </div>
+        <div class="container text-center">
+            <h1 id="txt5">What's in it for you</h1>
+            <hr id="hr2">
+        </div>
+        <div class="container d-flex justify-content-center">
+
+            <div class="container pt-5 ">
+                <img src="./assets/delivery.png" width="240" height="260" alt="">
+                <h2 class="text-center" id="txt6" >Free Delivery</h2>
+                <p class="text-center" id="txt7">We will provide the fastest home delivery service at zero cost.
+                </p>
+            </div>
+            <div class="container d-flex justify-content-center flex-column pt-5">
+                <img src="./assets/affordable.png" width="240" height="260"  alt="">
+                <h2 class="text-center" id="txt6">Affordable</h2>
+                
+                <p id="txt7" class="text-center">Completely decentralized service making it affordable 
+                    to customers as well as better price for seller.
+                    
+                </p>
+            </div>
+            <div class="container ">
+                <img src="./assets/5 star.png" width="290" height="315"  alt="">
+                <h2 class="text-center" id="txt6">Best Quality</h2>
+                
+                <p id="txt7" class="text-center">Get 5 Star products and Services from our website.
+                    
+                </p>
+            </div>
+            
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>
