@@ -48,7 +48,7 @@ The app also gives facility to search nearby hospitals and hotels and other safe
      -> create a workspace 
      -> connect Ganache server with project localhost
  
-<h2>how to run full project with web3</h2>
+<h2>how to run full project with web3 config</h2>
 
      ->Download or clone repository
      ->Open folder in command prompt
