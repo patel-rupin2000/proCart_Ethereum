@@ -31,12 +31,9 @@ The app also gives facility to search nearby hospitals and hotels and other safe
      ->Download or clone repository
      ->Open folder in command prompt
           cd <open location path>
-     ->run npm install
-     ->launch localhost:3000
-     ->launch landing.ejs 
- 
-
-
+          ->run npm install
+          ->launch localhost:3000
+          ->launch landing.ejs
 #step to connect Ethereum
 
      -> add chrome extension Metamask
@@ -50,6 +47,21 @@ The app also gives facility to search nearby hospitals and hotels and other safe
      -> install Ganache application 
      -> create a workspace 
      -> connect Ganache server with project localhost
+ 
+<h2>how to run full project with web3</h2>
+
+     ->Download or clone repository
+     ->Open folder in command prompt
+          cd <open location path>
+          cd <open location path>/Full Project with web3 config
+          ->run npm install
+          ->run truffle migrate --reset
+          ->run npm run dev
+          ->launch localhost
+
+
+
+
 
  
 
